@@ -39,4 +39,4 @@ console.log(typeof(myFunction))
 // 2) Non-primitive Datatypes
 //        Arrays  =>  object
 //        Function  =>  function
-//        Object  =>  object
+//        Object  =>  object (object function)
