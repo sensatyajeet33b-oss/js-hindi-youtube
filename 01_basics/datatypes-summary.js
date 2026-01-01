@@ -40,3 +40,24 @@ console.log(typeof(myFunction))
 //        Arrays  =>  object
 //        Function  =>  function
 //        Object  =>  object (object function)
+
+// stack(primitive), heap(non-primitive)
+
+// whenever we access anything inside the stack, its copy is created
+// whenever we access anything inside the heap, its reference is given
+let myYoutubename="hiteshchoudharydotcom"
+let anothername="chaiaurcode"
+
+console.log(myYoutubename);
+console.log(anothername);
+
+let userOne={
+    email:"user@google.com",
+    upi: "user@ybl"
+}
+
+
+let userTwo= userOne
+userTwo.email="hitesh@google.com"
+console.log(userOne.email);
+console.log(userTwo.email);
