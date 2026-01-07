@@ -52,3 +52,28 @@ console.log(Object.keys(tinderuser));
 console.log(Object.values(tinderuser))
 console.log(Object.entries(tinderuser))
 console.log(tinderuser.hasOwnProperty('isloggedin'));
+
+
+// object destructure
+const course= {
+    coursename:"jsin hindi",
+    price:"999",
+    courseinstructor:"hitesh"
+}
+
+const {courseinstructor:instructor}=course
+console.log(instructor)
+
+// api
+// api calling may return json format or array of objects 
+// {
+//     "name":"satya",
+//     "coursename":"fun with science",
+//     "fee"="free",
+// }
+
+// [
+//     {},
+//     {},
+//     {}
+// ]
