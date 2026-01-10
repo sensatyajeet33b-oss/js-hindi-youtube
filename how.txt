@@ -1,0 +1,55 @@
+javascript execution context i.e.
+how does javascript run our codes
+it is done using two phases
+whenver we give any code to javascript
+the first thing that is created is global execution context
+and this is referred by this variable
+
+global execution context
+function execution context
+eval execution context
+
+{our js code}
+the first phase is memory creation phase (creation phase)
+second phase is execution phase
+
+ex:
+let val1=10
+let val2=5
+function addnum(num1,num2){
+    total=num1+num2
+    return total
+}
+
+let result1=addnum(val1,val2)
+let resutl2=addnum(10,2)
+
+step1:
+global execution
+allocated in this
+
+step2:
+memory phase
+val1->undefined
+val2->undefined
+addnum->definition
+result1->undefined
+result->undefined
+
+step3:
+execution phase
+val=10
+val2=5
+addnum-------new variable environment + execution thread (once its work is done it is deleted)
+                memory phase: val1->undefined val2->undefined total->undefined
+                execution context: num1->10 num2->5 total->15
+the value of result1=15 is sent back to global execution context
+
+result2-----new variable environment + execution thread
+                memory phase: val1->undefined val2->undefined total->undefined
+                execution context: num1->10 num2->2 total->12
+result2=12
+the value of result2=12 is sent back to global execution context
+
+CALL STACK(LIFO)
+same as other concepts in programming
