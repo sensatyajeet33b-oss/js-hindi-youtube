@@ -22,8 +22,4 @@ map.set("Fr","FRANCE")
 // maps are not iterable
 for (const key in map) {
     console.log(key);
-    
-    
 }
-
-
